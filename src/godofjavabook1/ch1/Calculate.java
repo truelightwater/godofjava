@@ -1,3 +1,5 @@
+package godofjavabook1.ch1;
+
 public class Calculate {
   public static void main(String[] args) {
     Calculate sample = new Calculate();

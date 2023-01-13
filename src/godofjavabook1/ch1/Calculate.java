@@ -7,9 +7,9 @@ public class Calculate {
     int num2 = 5;
 
     System.out.println("add = " +sample.add(num1, num2));
-    System.out.println("add = " +sample.subtract(num1, num2));
-    System.out.println("add = " +sample.multiply(num1, num2));
-    System.out.println("add = " +sample.divide(num1, num2));
+    System.out.println("subtract = " +sample.subtract(num1, num2));
+    System.out.println("multiply = " +sample.multiply(num1, num2));
+    System.out.println("divide = " +sample.divide(num1, num2));
 
   }
 

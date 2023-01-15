@@ -7,8 +7,8 @@ public class ManageHeight {
     ManageHeight manager = new ManageHeight();
     manager.setData();
 
-    for (int loop = 1; loop <= 5; loop++) {
-      manager.printHeight(loop);
+    for (int classNo = 1; classNo <= 5; classNo++) {
+      manager.printHeight(classNo);
     }
 
     System.out.println();
@@ -28,6 +28,14 @@ public class ManageHeight {
         {173, 182, 181},
         {170, 180, 165, 177, 172},
     };
+
+/*    gradeHeights = new int[5][];
+    gradeHeights[0] = new int[] {170, 180, 173, 175, 177};
+    gradeHeights[0] = new int[] {160, 165, 167, 186};
+    gradeHeights[0] = new int[] {158, 177, 187, 176};
+    gradeHeights[0] = new int[] {173, 182, 181};
+    gradeHeights[0] = new int[] {170, 180, 165, 177, 172};*/
+
   }
 
   public void printHeight(int classNo) {
@@ -40,15 +48,13 @@ public class ManageHeight {
 
   public void printAverage(int classNo) {
     double sumHeight = 0.0;
-    double averageHeight = 0.0;
 
     System.out.println("Class No.:" + classNo);
     for (int studentHeight : gradeHeights[classNo - 1]) {
       sumHeight += studentHeight;
-      averageHeight = sumHeight / gradeHeights[classNo - 1].length;
     }
 
-    System.out.println("Height average : " +averageHeight);
+    System.out.println("Height average : " +sumHeight / gradeHeights[classNo - 1].length);
 
   }
 

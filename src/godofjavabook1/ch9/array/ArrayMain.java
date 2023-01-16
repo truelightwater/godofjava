@@ -1,4 +1,4 @@
-package godofjavabook1.example;
+package godofjavabook1.ch9.array;
 
 public class ArrayMain {
   public static void main(String[] args) {

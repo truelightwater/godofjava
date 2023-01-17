@@ -2,7 +2,7 @@ package godofjavabook1.ch10;
 
 public class AnimalRunner {
   public static void main(String[] args) {
-    Animal animal1 = new Animal("bird", 2, 2, 90);
+    Animal animal1 = new Animal("pigeon", 2, 2, 90);
     Dog animal2 = new Dog("dog", 4, 0, 70);
 
     animal1.move();

@@ -1,4 +1,4 @@
-package mentoring.thread;
+package mentoring.sychronized;
 
 public class ModifyAmountThread extends Thread {
     private CommonCalculate calc;

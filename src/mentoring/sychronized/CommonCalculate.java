@@ -1,4 +1,4 @@
-package mentoring.thread;
+package mentoring.sychronized;
 
 public class CommonCalculate {
     private int amount;

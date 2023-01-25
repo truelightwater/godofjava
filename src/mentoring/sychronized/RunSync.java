@@ -1,4 +1,4 @@
-package mentoring.thread;
+package mentoring.sychronized;
 
 public class RunSync {
     public static void main(String[] args) {

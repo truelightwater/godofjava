@@ -4,7 +4,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 
-public class Main {
+public class ThreadPoolExecute {
     public static void main(String[] args) {
         // ExecutorService 인터페이 구현객체 Executors 정적메소드를 통해 최대 스레드 개수가 2인 스레드 풀 생성
         ExecutorService executorService = Executors.newFixedThreadPool(2);

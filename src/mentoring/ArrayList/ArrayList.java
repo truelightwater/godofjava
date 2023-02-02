@@ -68,7 +68,7 @@ public class ArrayList {
     }
 
 
-    class ListIterator {
+    public class ListIterator {
         private int nextIndex = 0;
 
         public Object next() {
@@ -98,12 +98,7 @@ public class ArrayList {
             ArrayList.this.remove(nextIndex - 1);
             nextIndex--;
         }
-
-
-
     }
-
-
 
     public String toString() {
         String str = "[";

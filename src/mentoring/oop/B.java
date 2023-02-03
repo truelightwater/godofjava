@@ -2,17 +2,38 @@ package mentoring.oop;
 
 public class B extends A implements Enlistable, Marriedable {
 
-    public void print() {
-        System.out.println("Mentoring Test");
+    Enlistable enlistable;
+    Marriedable marriedable;
+
+    public B(Enlistable enlistable, Marriedable marriedable) {
+        this.enlistable = enlistable;
+        this.marriedable = marriedable;
+    }
+
+    public void setEnlistable(Enlistable enlistable) {
+        this.enlistable = enlistable;
+    }
+
+    public void setMarriedable(Marriedable marriedable) {
+        this.marriedable = marriedable;
     }
 
     @Override
     public void enlist() {
-        System.out.println("나라의 부름을 받아 군대로 입대합니다!");
+        enlistable.enlist();
     }
 
     @Override
     public void married() {
-        System.out.println("2022년 7월 2일에 결혼했습니다!");
+        marriedable.married();
+    }
+
+    @Override
+    public void input() {
+        super.input();
+    }
+
+    public void print() {
+        System.out.println("Mentoring Test");
     }
 }

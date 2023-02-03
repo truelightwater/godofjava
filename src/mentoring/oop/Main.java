@@ -1,29 +1,34 @@
 package mentoring.oop;
+
 public class Main {
     public static void main(String[] args) {
-        A a = new A();
-        B b = new B();
-        C c = new C();
+        Marriedable marriedable = new Marriedable() {
+            @Override
+            public void married() {
+                System.out.println("결혼합니다!");
+            }
+        };
 
-        // 확장
-        a.input();      // Studying
-        b.input();      // Studying
-        c.input();      // Studying
+        Enlistable enlistable = new Enlistable() {
+            @Override
+            public void enlist() {
+                System.out.println("입대합니다!");
+            }
+        };
 
-        // 재사용성
-        a.print();      // Test...
-        b.print();      // Mentoring Test
-        c.print();      // Coding Test
+        Enlistable enlistable2 = new Enlistable() {
+            @Override
+            public void enlist() {
+                System.out.println("학교갑니다!");
+            }
+        };
 
-        // 다형성
-        A a1 = new A();
-        A b1 = new B();
-        A c1 = new C();
+        B b = new B(enlistable, marriedable);
+        b.enlist(); // 군대
+        b.setEnlistable(enlistable2);
+        b.enlist(); // 학교
 
-        a1.print();     // Test...
-        b1.print();     // Mentoring Test
-        c1.print();     // Coding Test
-
+//        new C(new B(new A())); <- 이렇게 포장하는 것 ???? 뭐지 ????
 
     }
 }

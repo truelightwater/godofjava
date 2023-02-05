@@ -1,4 +1,4 @@
-package Principles_and_Understanding_of_Object_Orientation;
+package Object_Orientation.mouse;
 
 public class MouseDriver1 {
     public static void main(String[] args) {

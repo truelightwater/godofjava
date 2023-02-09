@@ -10,7 +10,6 @@ public class MenuItem {
     }
 
     public int cost() {
-
         return price;
     }
 
